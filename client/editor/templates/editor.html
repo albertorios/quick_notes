@@ -1,0 +1,83 @@
+<template name="editor">
+  <div class="ui grid">
+    <!--Banner-->
+    <div class="one wide column"></div>
+    <div class="fourteen wide column">
+      <div class="underliner">
+        <h1 class="title">Quick_Notes/</h1><h2 class="subtitle">Editor/</h2>{{> loginButtons}}
+      </div>
+    </div>
+    <div class="one wide column"></div>
+    <!--Editor Split Panel-->
+    {{#if currentUser}}
+      <div class="three wide column">
+        <div class="row">
+          <div class="column">
+            <h1 class="notebook-title">Notebooks</h1>
+            {{#each menu}}
+              {{{this}}}
+            {{/each}}
+          </div>
+        </div>
+
+      </div>
+    {{else}}
+      <div class="two wide column"></div>
+    {{/if}}
+    <div class="twelve wide column">
+      <div class="ui internally celled grid">
+        <div class="row two columns">
+          <div class="column">
+            {{#if currentUser}}
+              <h3 class="subsubtitle-red">{{notebook}}/<span style="color:#9E9E9E; font-size:75%;">{{page}}</span></h3>
+            {{else}}
+               <h3 class="subsubtitle">Editor</h3>
+            {{/if}}
+          </div>
+          <div class="column">
+            <h3 class="subsubtitle">
+              {{#if render}}
+                Results
+              {{else}}
+                Equation
+              {{/if}}
+            </h3>
+          </div>
+        </div>
+        <div class="row two columns">
+          <div class="column">
+            <div class="ui form">
+              <div class="field">
+                <textarea rows="20" id="editor_area">##Using [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and [LaTex](http://www.latex-project.org/) create fast and professional looking notes!
+###*Try adding an equation! Using either your mouse or trackpad draw math formulas that will automatically be converted to LaTex*
+
+###Creating an account will allow you to save your wonderful notes online!</textarea>
+              </div>
+            </div>
+            {{#if currentUser}}
+            <div class="fluid ui button" id="save_page">Save</div>
+            {{/if}}
+          </div>
+          <div class="column">
+            {{#if render}}
+              {{>renderer}}
+            {{else}}
+              {{>input}}
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#if currentUser}}
+    <div class="one wide column"></div>
+    {{else}}
+      <div class="two wide column"></div>
+      <div class="centered row">
+        <div class="column">
+          <h2 class="subtitle-center">Sign up for more features!</h2>
+        </div>
+      </div>
+    {{/if}}
+  </div>
+  <div class="ui hidden divider"></div>
+</template>

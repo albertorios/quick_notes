@@ -1,0 +1,16 @@
+<template name="renderer">
+  {{#each render_notes}}
+    {{#if type}}
+    {{#markdown}}{{value}}{{/markdown}}
+    {{else}}
+    {{#mathjax}}
+      {{type}}
+      <p>
+        $${{value}}$$
+      </p>
+    {{/mathjax}}
+    {{/if}}
+  {{/each}}
+  <div class="ui hidden divider"></div>
+  <div class="fluid ui positive button" id="add_question">Add Equation</div>
+</template>

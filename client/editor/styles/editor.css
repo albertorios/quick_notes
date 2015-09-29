@@ -1,0 +1,97 @@
+.title{
+  display: inline-block;
+  color: #F44336;
+  font-size: 400%;
+  margin-bottom: 0;
+}
+.subtitle{
+  display: inline-block;
+  color: #9E9E9E;
+  font-size: 250%;
+  margin-bottom: 0;
+}
+.subtitle-center{
+  text-align: center;
+  color: #9E9E9E;
+  font-size: 250%;
+  margin-bottom: 0;
+}
+.subsubtitle{
+  text-align: center;
+  color: #2196F3;
+  font-size: 225%;
+}
+.underliner{
+  width: 100%;
+  border-bottom: 1px dashed #9E9E9E;
+}
+
+#editor{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+}
+.new-notebook{
+  display: block;
+  width: 100%;
+  font-size: 150%;
+  color: #4CAF50;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.new-notebook:hover{
+  color: #81C784;
+}
+
+.notebook{
+  font-size: 150%;
+  color: #424242;
+  text-align: right;
+  border-bottom: 1px #424242 dashed;
+}
+
+.notebook-title{
+  color: #212121;
+  font-size: 250%;
+  text-align: right;
+  border-bottom: 1px #212121 dashed;
+}
+.page{
+  display: block;
+  width: 100%;
+  color: #3F51B5;
+  text-align: right;
+  font-size: 125%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #3F51B5 dashed;
+  font-weight: bolder;
+}
+.page:hover{
+  color: #7986CB;
+}
+
+.new-page{
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 125%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #4CAF50;
+  border-bottom: 1px #4CAF50 dashed;
+  font-weight: bolder;
+}
+.new-page:hover{
+  color: #81C784;
+}
+.login-link-text{
+  color: #2196F3;
+}
+.subsubtitle-red{
+  text-align: center;
+  color: #F44336;
+  font-size: 225%;
+}

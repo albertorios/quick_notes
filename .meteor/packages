@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+iron:router
+semantic:ui
+flemay:less-autoprefixer
+jparker:crypto-core
+jparker:crypto-hmac
+johnschult:crypto-sha512
+jparker:crypto-base64
+mrt:q
+mrt:mathjax
+markdown
+accounts-ui
+accounts-password
+ongoworks:pdf
